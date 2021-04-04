@@ -1,7 +1,7 @@
 export default
     {
         
-        name :'Christopher Neill',
+        name :'Chris Walsh',
         headerTagline: [
                         'I am Chris Walsh.',
                         'a full stack web developer',
