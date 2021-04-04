@@ -3,15 +3,12 @@ export default
         
         name :'Christopher Neill',
         headerTagline: [
-                        'I am Christopher Neill.',
+                        'I am Chris Walsh.',
                         'a full stack web developer',
-                        'from Austin'
+                        'from Warrington'
     ],
-        contactEmail:'christopherneill2019@icloud.com',
-        resume: "./resume.zip",
-        abouttext: "I am a well organized people person who is focused on excellent client support, program development, and complex problem solving. Passionate about helping others. Cultivate positive morale by coaching and encouraging others.",
-        aboutImage:'./backgpic.jpeg',
-       ShowAboutImage:true,
+        contactEmail:'chriswalsh08@googlemail.com',
+        abouttext: "I have recently been studying web development and can now comfortably use front end and back end.",
  
        projects:[
         {
@@ -19,43 +16,38 @@ export default
             title: 'Design A Date',
             service: 'A program to make dating easier',
             imageSrc: "./design.png",
-            url: 'https://christopherneill.github.io/GroupProject/'
+            url: 'https://walsc024.github.io/GroupProject/'
         },
         {
             id: 2,
-            title: 'Find a Lost pet',
-            service: 'microchip matcher',
-            imageSrc: "./catsndogs.png",
-            url: 'https://polar-stream-66961.herokuapp.com/'
+            title: 'Workout Weekly',
+            service: 'Plan you weekly workouts around you busy life',
+            url: 'https://workout-weekly.herokuapp.com/'
         },
 
            {
             id: 3,
-            title:'Password Generator', 
-             service:'First use of javascript', 
-             imageSrc:"./pass.png",
-             url:'https://christopherneill.github.io/javascript/'
+            title:'ReadMe Generator', 
+             service:'Generate a read me for your project', 
+             url:'https://github.com/walsc024/Week-9-README-Generator'
             },
             {
                 id: 4,
-                title: 'Command line inteface',
-                service: 'Node Program Development',
-                imageSrc: "./rmgen.png",
-                url: 'https://github.com/ChristopherNeill/clirmgen'
+                title: 'Weather API',
+                service: 'Search for weather in your area',
+                url: 'https://walsc024.github.io/Week-6-Weather-API/'
             },
             { 
                 id: 5,
-                title: 'Eat da burger',
-                service: 'MySQL, Node, Express, Handlebars and a ORM',
-                imageSrc: "./burger.png",
-                url: 'https://burgermonster123.herokuapp.com/'
+                title: 'React Employee Management',
+                service: 'Track and filter employee information',
+                url: 'https://walsc024.github.io/react-employee-directory/'
             },
             {
                 id: 6,
-                title: 'Weather App',
-                service: 'Api implementation',
-                imageSrc: "./weather.png",
-                url: 'https://christopherneill.github.io/weatherapp2/'
+                title: 'Online Offline Budget Tracker',
+                service: 'Track your budget even when offline',
+                url: 'https://offline-budget-tracker2537.herokuapp.com/ '
            }
 
                         
