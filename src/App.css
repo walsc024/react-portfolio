@@ -1,30 +1,262 @@
 
-body {
-    font-family: "Poppins";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+
+body{
+  font-size: 16px;
+ 
+  
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
-:root {
-    --primary-white: #fff;
+
+.App {
+  text-align: center;
 }
 
-/****** NAVBAR ******/
 
 
+.App-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  top:4em;
+}
+.heading-background{
+  position: fixed;
+  opacity: 0.05;
+  font-size: 25em;
+  left:-0.2em;
+  top:-0.5em;
+  z-index: -100;
+  color:white;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+font-size: 1em;
+font-weight: 400;  
+padding: 2em;
+margin-right: 50em;
+}
+nav{
+  position:fixed;
+  left:60em;
+  top:6em;
+z-index: 100;
+}
+nav li{
+  display: inline-block;
+  cursor: pointer;
 
-/* NAVBAR LINKS  */
-
-nav a.nav-link {
-    font-weight: 500;
-    letter-spacing: 0.0375rem;
-    cursor: pointer;
+}
+nav li .link{
+  text-decoration: none;
+  color: black;
+  padding:1em;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+li .link:hover{
+  opacity: 1;
+}
+.active{
+  color:black;
+  opacity: 1;
 }
 
-nav ul li {
-    text-transform: uppercase;
+.header-title button{
+  background: black;
+  border: 0px;
+  padding: 1em 3em;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.header-title button:hover{
+  opacity: 0.8;
+}
+.header-title button a{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-decoration: none;
+}
+.header-title{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  text-align: left;
+  top:2em;
 }
 
-.navbar nav > li > a {
-    color: var(--primary-white) !important;
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+.footer{
+  position: relative;
+  top:2em;
+  padding: 1em;
+}
+.footer a{
+  text-decoration: none;
+  color:#2c59fb;
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-device-width: 320px) and (max-device-width : 480px){
+
+  body {
+    font-size: 6px;
+  }
+  header h1{
+font-size: 5em;  
+padding: 1em;
+margin-right: 0em;
+}
+
+.heading-background{
+  display: none;
+}
+nav{
+  display: none;
+}
+.header-title{
+  font-size: 3em;
+  text-align: left;
+  top:1em;
+  left:1em;
+}
+
+.work{
+  left:2em;
+  top:2em;
+  align-items: flex-start;
+}
+.work .work-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5em;
+}
+.project img{
+width: 45em;  
+height: 45em;
+}
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+body{
+    font-size: 10px;
+  }
+header h1{
+font-size: 5em;  
+padding: 1em;
+margin-right: 0em;
+}
+
+nav{
+  display: none;
+}
+.header-title{
+  font-size: 3.6em;
+  text-align: left;
+  top:1em;
+  left:1em;
+}
+
+
+.work{
+  left:6em;
+  top:4em;
+  align-items: flex-start;
+}
+.work .work-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
+}
+.project img{
+width: 30em;  
+height: 30em;
+}
+
+
+.footer{
+  top:4em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+
+
+
+body{
+    font-size: 20px;
+  }
+  header h1{
+    font-size: 3em;
+    margin-right: 25em;
+  }
+
+
+  nav{
+  left:60em;
+  top:12em;
+  z-index: 100;
+}
+nav li{
+   font-size: 3em;
+
+}
+.header-title{
+  font-size: 5em;
+  top:1em;
+  left:1em;
+}
+
+
+.work{
+  left:10em;
+  top:4em;
+  align-items: flex-start;
+}
+.work .work-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project img{
+width: 32em;  
+height: 32em;
+}
+
+
+.footer{
+  top:4em;
+  padding: 1em;
+  font-size: 4em;
+}
+
+
 }
